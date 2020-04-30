@@ -54,6 +54,7 @@ function App() {
             type="number"
             onChange={setAccuracyFromEvent}
             value={accuracy}
+            min={0}
           />
         </label>
         <label>
@@ -62,6 +63,7 @@ function App() {
             type="number"
             onChange={setDifficultyFromEvent}
             value={difficulty}
+            min={0}
           />
         </label>
       </div>
