@@ -17,6 +17,8 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,6 +46,7 @@
   },
   "devDependencies": {
     "@types/js-combinatorics": "^0.5.31",
+    "gh-pages": "^2.2.0",
     "prettier": "^2.0.5"
   }
 }
