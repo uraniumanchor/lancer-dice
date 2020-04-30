@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29f5cc24e62d52930f1e19e0adcac75d",
+    "revision": "aae3fd1771dc559a55c59d6576527df4",
     "url": "/lancer-dice/index.html"
   },
   {
-    "revision": "75c2524c044ae2d54d12",
+    "revision": "4b0b7327f52a686e2e69",
     "url": "/lancer-dice/static/css/main.176f753f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lancer-dice/static/js/2.9f5729ba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "75c2524c044ae2d54d12",
-    "url": "/lancer-dice/static/js/main.85436432.chunk.js"
+    "revision": "4b0b7327f52a686e2e69",
+    "url": "/lancer-dice/static/js/main.f54a2000.chunk.js"
   },
   {
     "revision": "7452368326dc70ca6fce",
