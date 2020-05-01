@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lancer-dice/static/css/main.176f753f.chunk.css",
-    "main.js": "/lancer-dice/static/js/main.f54a2000.chunk.js",
-    "main.js.map": "/lancer-dice/static/js/main.f54a2000.chunk.js.map",
+    "main.js": "/lancer-dice/static/js/main.b59e20be.chunk.js",
+    "main.js.map": "/lancer-dice/static/js/main.b59e20be.chunk.js.map",
     "runtime-main.js": "/lancer-dice/static/js/runtime-main.0628c183.js",
     "runtime-main.js.map": "/lancer-dice/static/js/runtime-main.0628c183.js.map",
     "static/js/2.9f5729ba.chunk.js": "/lancer-dice/static/js/2.9f5729ba.chunk.js",
     "static/js/2.9f5729ba.chunk.js.map": "/lancer-dice/static/js/2.9f5729ba.chunk.js.map",
     "index.html": "/lancer-dice/index.html",
-    "precache-manifest.224165be17e619cf02463c07af5fd722.js": "/lancer-dice/precache-manifest.224165be17e619cf02463c07af5fd722.js",
+    "precache-manifest.82512e566565df5680a6d2577f09e6e7.js": "/lancer-dice/precache-manifest.82512e566565df5680a6d2577f09e6e7.js",
     "service-worker.js": "/lancer-dice/service-worker.js",
     "static/css/main.176f753f.chunk.css.map": "/lancer-dice/static/css/main.176f753f.chunk.css.map",
     "static/js/2.9f5729ba.chunk.js.LICENSE.txt": "/lancer-dice/static/js/2.9f5729ba.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.0628c183.js",
     "static/js/2.9f5729ba.chunk.js",
     "static/css/main.176f753f.chunk.css",
-    "static/js/main.f54a2000.chunk.js"
+    "static/js/main.b59e20be.chunk.js"
   ]
 }
