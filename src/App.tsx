@@ -2,6 +2,10 @@ import React, { useCallback, useState, useMemo } from "react";
 import combinatorics from "js-combinatorics";
 import "./App.css";
 
+interface Results {
+  [k: number]: number;
+}
+
 function App() {
   const [flat, setFlat] = useState(0);
   const [accuracy, setAccuracy] = useState(0);
@@ -26,19 +30,24 @@ function App() {
       Array.from(Array(6).keys()).map((i) => i + 1)
     );
 
-    const results = combinatorics
-      .cartesianProduct(d20Values, ...accValueArrays)
-      .map(([base, ...mods]) => {
-        return (
-          base +
-          flat +
-          (mods.length ? Math.max(...(mods as number[])) * sign : 0)
-        );
-      });
+    const combos = combinatorics.cartesianProduct(d20Values, ...accValueArrays);
+    const totalCombos = combos.length;
 
-    return d20Values.map(
-      (v) =>
-        (results.filter((r: number) => r >= v).length / results.length) * 100.0
+    const results = combos.reduce((results, [base, ...mods]) => {
+      const value =
+        base +
+        flat +
+        (mods.length ? Math.max(...(mods as number[])) * sign : 0);
+      results[value] = (results[value] || 0) + 1;
+      return results;
+    }, {} as Results);
+
+    return d20Values.map((v) =>
+      Object.keys(results).reduce(
+        (total, key) =>
+          +key >= v ? total + (results[+key] / totalCombos) * 100.0 : total,
+        0
+      )
     );
   }, [flat, accuracy, difficulty]);
   return (
