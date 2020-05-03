@@ -5,8 +5,12 @@
   align-items: center;
 }
 
+.Tables {
+  display: flex;
+}
+
 table {
-  margin-top: 12px;
+  margin: 12px;
 }
 
 table,
