@@ -1,6 +1,6 @@
-import React, { useCallback, useState, useMemo } from "react";
-import combinatorics from "js-combinatorics";
-import "./App.css";
+import React, { useCallback, useState, useMemo } from 'react';
+import combinatorics from 'js-combinatorics';
+import './App.css';
 
 interface Results {
   [k: number]: number;
@@ -37,6 +37,7 @@ function App() {
       return { 0: 1 } as Results;
     }
 
+    // this is horribly inefficient but not in a way that matters because the number of dice involved stays small
     const combos = combinatorics.cartesianProduct(...accValueArrays);
 
     return combos.reduce((bonuses, [...mods]) => {
